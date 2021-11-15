@@ -1,0 +1,14 @@
+{% if image_url -%}
+![rw-book-cover]({{image_url}})
+
+{% endif -%}
+## Metadata
+- Author: {% if author %}[[{{author}}]]{% endif %}
+- Full Title: {{full_title}}
+- Category: #{{category}}
+{% if document_tags -%}
+- Document Tags: {% for tag in document_tags %}[[{{tag}}]] {% endfor %}
+{% endif -%}
+{% if url -%}
+- URL: {{url}}
+{% endif -%}

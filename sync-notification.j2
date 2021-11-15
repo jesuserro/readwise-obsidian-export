@@ -1,0 +1,3 @@
+[[{{date|date('Y-m-d')}}]] {{time}} — Synced {{num_highlights}} highlight{{num_highlights|pluralize}} from {{num_books}} document{{num_books|pluralize}}.
+{% for book in books %}    - {{ book.num_highlights_added}} highlights from {{ book.title }}
+{%endfor %}
